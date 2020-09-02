@@ -4,4 +4,7 @@
     <string name="a_value">A</string>
     <string name="b_value">B</string>
     <string name="conjuction_value">A ^ B</string>
+    <string name="true_value">T</string>
+    <string name="false_value">F</string>
+    <string name="submit">Submit</string>
 </resources>

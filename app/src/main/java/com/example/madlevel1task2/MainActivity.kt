@@ -16,6 +16,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        randomValue()
+
         binding.btnConfirm.setOnClickListener {
             correctAnswers = 0;
             val input1 = binding.input1.text.toString()
@@ -46,6 +48,10 @@ class MainActivity : AppCompatActivity() {
 
             showCorrectAnswers()
 
+            if(correctAnswers == 4) {
+                randomValue()
+            }
+
         }
     }
 
@@ -68,6 +74,31 @@ class MainActivity : AppCompatActivity() {
         }
 
         return false
+    }
+
+    private fun randomValue() {
+
+        var item: String
+        val list: ArrayList<String> = ArrayList()
+
+        for(i in 0..7) {
+            val number = (0..1).random()
+            item = if(number > 0) {
+                "T"
+            } else {
+                "F"
+            }
+            list.add(item)
+        }
+
+        binding.textView5.text = list[0]
+        binding.textView6.text = list[1]
+        binding.textView8.text = list[2]
+        binding.textView9.text = list[3]
+        binding.textView10.text = list[4]
+        binding.textView11.text = list[5]
+        binding.textView12.text = list[6]
+        binding.textView13.text = list[7]
     }
 
     private fun showCorrectAnswers() {

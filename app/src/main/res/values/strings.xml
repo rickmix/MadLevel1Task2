@@ -7,4 +7,7 @@
     <string name="true_value">T</string>
     <string name="false_value">F</string>
     <string name="submit">Submit</string>
+    <string name="correct">Correct</string>
+    <string name="incorrect">Incorrect</string>
+    <string name="answer">Correct answers: %d</string>
 </resources>

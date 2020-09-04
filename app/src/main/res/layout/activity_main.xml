@@ -152,52 +152,56 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/input_1"
+        android:id="@+id/input1"
         android:layout_width="107dp"
         android:layout_height="42dp"
         android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:maxLength="1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.633"
         app:layout_constraintStart_toEndOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <EditText
-        android:id="@+id/input_2"
+        android:id="@+id/input2"
         android:layout_width="107dp"
         android:layout_height="42dp"
         android:layout_marginTop="20dp"
         android:ems="10"
+        android:maxLength="1"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.637"
         app:layout_constraintStart_toEndOf="@+id/textView9"
-        app:layout_constraintTop_toBottomOf="@+id/input_1" />
+        app:layout_constraintTop_toBottomOf="@+id/input1" />
 
     <EditText
-        android:id="@+id/input_3"
+        android:id="@+id/input3"
         android:layout_width="107dp"
         android:layout_height="42dp"
         android:layout_marginTop="20dp"
         android:ems="10"
+        android:maxLength="1"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.637"
         app:layout_constraintStart_toEndOf="@+id/textView11"
-        app:layout_constraintTop_toBottomOf="@+id/input_2" />
+        app:layout_constraintTop_toBottomOf="@+id/input2" />
 
     <EditText
-        android:id="@+id/input_4"
+        android:id="@+id/input4"
         android:layout_width="107dp"
         android:layout_height="42dp"
         android:layout_marginTop="20dp"
         android:ems="10"
+        android:maxLength="1"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.637"
         app:layout_constraintStart_toEndOf="@+id/textView13"
-        app:layout_constraintTop_toBottomOf="@+id/input_3" />
+        app:layout_constraintTop_toBottomOf="@+id/input3" />
 
     <Button
         android:id="@+id/btnConfirm"
